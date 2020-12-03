@@ -8,6 +8,6 @@ require 'active_support/time'
 module Clockwork
   every(10.seconds,'test') do
     sample = SlackNotify::Client.new(webhook_url: ENV['WEBHOOK'])
-    sample.notify("Hi")
+    sample.notify("はじめまして")
   end
 end
